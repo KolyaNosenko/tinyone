@@ -1,0 +1,55 @@
+.section_features{
+  padding: 120px 0 170px 0;
+  @media only screen and (max-width: $screen-sm-max) {
+    padding: 78px 0 110px 0;
+  }
+  @media only screen and (max-width: $screen-xs-max) {
+    padding: 55px 0 77px 0;
+  }
+  .section_title{
+    text-align: center;
+    &_description{
+      margin-top: 20px;
+      text-align: center;
+      @media only screen and (max-width: $screen-sm-max) {
+        margin-top: 13px;
+      }
+      @media only screen and (max-width: $screen-xs-max) {
+        margin-top: 9px;
+      }
+    }
+  }
+  .features_item_card{
+    position: relative;
+    margin-top: 85px;
+    padding: 0 15px 0 80px;
+    @media only screen and (max-width: $screen-sm-max) {
+      margin-top: 55px;
+      padding: 0 13px 0 72px;
+    }
+    @media only screen and (max-width: $screen-sm-max) {
+      margin-top: 38px;
+    }
+    .title{
+      font-size: 22px;
+      font-family:$primaryFontB;
+    }
+    .icon_item_card{
+      position: absolute;
+      left: 5px;
+      font-size: 40px;
+      @media only screen and (max-width: $screen-sm-max) {
+        font-size: 38px;
+      }
+      @media only screen and (max-width: $screen-xs-max) {
+        font-size: 33px;
+      }
+    }
+    .section_paragraph{
+      margin-top: 15px;
+      @media only screen and (max-width: $screen-sm-max) {
+      margin-top: 10px;
+    }
+    }
+  }
+}

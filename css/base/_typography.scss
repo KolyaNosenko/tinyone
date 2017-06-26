@@ -1,0 +1,35 @@
+.section_title{
+  color: $defaultColor;
+  font-family:$primaryFontB;
+  font-size: 32px;
+  @media only screen and (max-width: $screen-sm-max) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: $screen-xs-max) {
+    font-size: 26px;
+    text-align: center;
+  }
+  &_description{
+    color: $sectionTitleDescrColor;
+    font-size: 20px;
+    font-family:$primaryFontR;
+    @media only screen and (max-width: $screen-sm-max) {
+      font-size: 19px;
+    }
+    @media only screen and (max-width: $screen-xs-max) {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+.section_paragraph{
+  color: $sectionParagraphColor;
+  font-size: 16px;
+  font-family:$primaryFontR;
+  @media only screen and (max-width: $screen-sm-max) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: $screen-xs-max) {
+    font-size: 13px;
+  }
+}

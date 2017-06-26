@@ -1,0 +1,21 @@
+.footer{
+  margin-top: 135px;
+  color: #FFFFFF;
+  @media only screen and (max-width: $screen-sm-max) {
+    margin-top: 88px;
+  }
+  @media only screen and (max-width: $screen-xs-max) {
+    margin-top: 60px;
+  }
+  &_list_items{
+    list-style-type: none;
+    .list_item{
+      a{
+        color: #FFFFFF;
+        &:hover{
+          color: $sectionActiveColor;
+        }
+      }
+    }
+  }
+}

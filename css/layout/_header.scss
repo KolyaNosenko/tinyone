@@ -1,0 +1,77 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family:$primaryFontB;
+  margin-top: 60px;
+  @media only screen and (max-width: $screen-sm-max) {
+    margin-top: 40px;
+  }
+  @media only screen and (max-width: $screen-sm-max) {
+    margin-top: 28px;
+  }
+  &_logo{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    @media only screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+    img{
+      margin-right: 10px;
+    }
+  }
+  &_list_items{
+    align-self: flex-end;
+    list-style-type: none;
+    @media only screen and (max-width: $screen-xs-max) {
+      display: none;
+    }
+    .list_item{
+      display: inline-block;
+      margin-right: 72px;
+      @media only screen and (max-width: $screen-sm-max) {
+        margin-right: 65px;
+      }
+      &:last-of-type{
+        margin-right: 0;
+      }
+      a{
+        font-size: 22px;
+        @media only screen and (max-width: $screen-sm-max) {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+  .drop_down_button{
+    display: none;
+    width: 19px;
+    height: 16px;
+    background-image: url("../img/drop_down_menu_btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    @media only screen and (max-width: $screen-xs-max) {
+      display: block;
+    }
+  }
+  &_drop_down_menu{
+    display: none;
+    background-color: $defaultColor;
+    list-style-type: none;
+    margin-top: 20px;
+    border-radius: 2px;
+    .drop_down_item{
+      text-align: center;
+      a{
+        display: block;
+        font-family: $primaryFontB;
+        font-size: 22px;
+        color: $footer_links_color;
+        &:hover{
+          color: $sectionActiveColor;
+        }
+      }
+    }
+  }
+}
